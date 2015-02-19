@@ -1,32 +1,32 @@
 {
   "name": "jameskao",
   "version": "1.0.0",
-  "description": "James Kao - Data Hacker",
+  "description": "James Kao | Data Hacker",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
-  },
-  "keywords": [
-    "James",
-    "Kao",
-    "Data",
-    "Hacker"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bestkao/jameskao.git"
   },
   "author": "James Kao",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bestkao/jameskao/issues"
   },
-  "homepage": "https://github.com/bestkao/jameskao",
+  "homepage": "https://jameskao.co",
   "dependencies": {
     "express": "^4.11.2"
   },
+  "devDependencies": {},
   "engines": {
     "node": "0.10.x"
   },
-  "devDependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bestkao/jameskao.git"
+  },
+  "keywords": [
+    "James",
+    "Kao",
+    "Data",
+    "Hacker"
+  ]
 }

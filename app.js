@@ -1,15 +1,27 @@
 var express = require('express')
 var app = express()
 
+app.set('port', (process.env.PORT || 3000));
+
 app.get('/', function (req, res) {
   res.send('Hello World!')
 })
 
-var server = app.listen(3000, function () {
+// accept POST request on the homepage
+app.post('/', function (req, res) {
+  res.send('Got a POST request');
+})
 
-  var host = server.address().address
-  var port = server.address().port
+// accept PUT request at /user
+app.put('/user', function (req, res) {
+  res.send('Got a PUT request at /user');
+})
 
-  console.log('Example app listening at http://%s:%s', host, port)
+// accept DELETE request at /user
+app.delete('/user', function (req, res) {
+  res.send('Got a DELETE request at /user');
+})
 
+var server = app.listen(app.get('port'), function () {
+  console.log('Node app running at http://localhost:%s', app.get('port'))
 })
