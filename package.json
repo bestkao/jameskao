@@ -1,0 +1,22 @@
+{
+  "name": "jameskao",
+  "version": "1.0.0",
+  "description": "James Kao - Data Hacker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bestkao/jameskao.git"
+  },
+  "author": "James Kao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bestkao/jameskao/issues"
+  },
+  "homepage": "https://github.com/bestkao/jameskao",
+  "dependencies": {
+    "express": "^4.11.2"
+  }
+}
