@@ -26,5 +26,8 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
 
-# Banish .DS_Store from Macs!
+# Node artifacts
+/node_modules
+npm-debug.log
 .DS_Store
+/*.env

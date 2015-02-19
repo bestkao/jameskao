@@ -18,5 +18,18 @@
   "homepage": "https://github.com/bestkao/jameskao",
   "dependencies": {
     "express": "^4.11.2"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "James",
+    "Kao",
+    "Data",
+    "Hacker"
+  ],
+  "scripts": {
+    "start": "node app.js"
   }
 }
