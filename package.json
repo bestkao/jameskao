@@ -4,8 +4,14 @@
   "description": "James Kao - Data Hacker",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
+  "keywords": [
+    "James",
+    "Kao",
+    "Data",
+    "Hacker"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/bestkao/jameskao.git"
@@ -22,14 +28,5 @@
   "engines": {
     "node": "0.10.x"
   },
-  "devDependencies": {},
-  "keywords": [
-    "James",
-    "Kao",
-    "Data",
-    "Hacker"
-  ],
-  "scripts": {
-    "start": "node app.js"
-  }
+  "devDependencies": {}
 }
