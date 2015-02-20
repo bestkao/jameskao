@@ -1,4 +1,7 @@
+@import url("ProximaNova.css");
+
 body {
+	font-family: 'Proxima Nova Thin', 'Helvetica Neue', Arial, sans-serif;
   padding-top: 50px;
 }
 .starter-template {
