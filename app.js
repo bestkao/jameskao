@@ -4,11 +4,11 @@ var app = express()
 app.set('port', (process.env.PORT || 3000))
 app.set('views', './views')
 app.set('view engine', 'jade')
-// app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/public'))
 
 app.route('/')
   .get(function (req, res) {
-    res.render('index', {title: 'James Kao | Data Hacker', message: 'Hello World'})
+    res.render('index')
   })
   .post(function (req, res) {
     res.send('Got a POST request')
