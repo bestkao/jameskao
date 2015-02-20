@@ -1,4 +1,4 @@
-# [JamesKao] (http://jameskao.co)
+# [James Kao] (http://jameskao.co)
 
 Personal Site of James Kao - Data Hacker and Full Stack Dev
 
