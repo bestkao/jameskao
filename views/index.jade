@@ -1,7 +1,12 @@
 extends layout
 
+block head
+  include header
+
 block content
   .container
     .starter-template
       h1 James Kao
       p.lead Data Hacker | Full Stack Dev
+  #content
+  script(src='js/build/tutorial3.js')
