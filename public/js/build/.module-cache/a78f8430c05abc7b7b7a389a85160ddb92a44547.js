@@ -15,7 +15,7 @@ var CommentList = React.createClass({displayName: "CommentList",
     return (
       React.createElement("div", {className: "commentList"}, 
         React.createElement(Comment, {author: "James Kao"}, "This is one comment"), 
-        React.createElement(Comment, {author: "Ray Kurzweil"}, "This is one *another* comment")
+        React.createElement(Comment, {author: "Peter Thiel"}, "This is one *another* comment")
       )
     )
   }

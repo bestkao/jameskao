@@ -15,7 +15,7 @@ var CommentList = React.createClass({
     return (
       <div className='commentList'>
         <Comment author='James Kao'>This is one comment</Comment>
-        <Comment author='Ray Kurzweil'>This is one *another* comment</Comment>
+        <Comment author='Peter Thiel'>This is *another* comment</Comment>
       </div>
     )
   }

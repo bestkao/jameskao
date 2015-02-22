@@ -1,4 +1,5 @@
 var express = require('express')
+var fs = require('fs')
 var router = express.Router()
 
 /* Frontpage Routes */
@@ -8,6 +9,14 @@ router.route('/')
   })
   .post(function (req, res) {
     res.send('Got a POST request')
+  })
+
+/* Comments JSON */
+router.route('/comments.json')
+  .get(function(req, res) {
+    fs.readFile('_comments.json', function(err, data) {
+      res.json(JSON.parse(data))
+    })
   })
 
 /* Hello World */
