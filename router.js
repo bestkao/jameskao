@@ -18,6 +18,15 @@ router.route('/comments.json')
       res.json(JSON.parse(data))
     })
   })
+  .post(function(req, res) {
+    fs.readFile('_comments.json', function(err, data) {
+      var comments = JSON.parse(data)
+      comments.push(req.body)
+      fs.writeFile('_comments.json', JSON.stringify(comments, null, 4), function(err) {
+        res.json(JSON.stringify(comments))
+      })
+    })
+  })
 
 /* Hello World */
 router.route('/hello')

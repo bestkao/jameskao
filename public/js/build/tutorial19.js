@@ -19,12 +19,25 @@ var CommentBox = React.createClass({displayName: "CommentBox",
     this.loadCommentsFromServer()
     setInterval(this.loadCommentsFromServer, this.props.pollInterval)
   },
+  handleCommentSubmit: function(comment) {
+    $.ajax(this.props.url, {
+      dataType: 'json',
+      type: 'POST',
+      data: comment,
+      success: function(data) {
+        this.setState({data: data})
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString())
+      }.bind(this)
+    })
+  },
   render: function() {
     return (
       React.createElement("div", {className: "commentBox"}, 
         React.createElement("h1", null, "Comments"), 
         React.createElement(CommentList, {data: this.state.data}), 
-        React.createElement(CommentForm, null)
+        React.createElement(CommentForm, {onCommentSubmit: this.handleCommentSubmit})
       )
     )
   }
@@ -48,10 +61,23 @@ var CommentList = React.createClass({displayName: "CommentList",
 })
 
 var CommentForm = React.createClass({displayName: "CommentForm",
+  handleSubmit: function(e) {
+    e.preventDefault()
+    var author = this.refs.author.getDOMNode().value.trim()
+    var text = this.refs.text.getDOMNode().value.trim()
+    if (!text || !author) {
+      return
+    }
+    this.props.onCommentSubmit({author: author, text: text})
+    this.refs.author.getDOMNode().value = ''
+    this.refs.text.getDOMNode().value = ''
+  },
   render: function() {
     return (
-      React.createElement("div", {className: "commentForm"}, 
-        "Hello, World! I am a CommentForm."
+      React.createElement("form", {className: "commentForm", onSubmit: this.handleSubmit}, 
+        React.createElement("input", {type: "text", placeholder: "Your name", ref: "author"}), 
+        React.createElement("input", {type: "text", placeholder: "Say something...", ref: "text"}), 
+        React.createElement("input", {type: "submit", value: "Post"})
       )
     )
   }

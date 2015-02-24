@@ -1,4 +1,14 @@
 [
-  {"author": "James Kao", "text": "This is one comment"},
-  {"author": "Peter Thiel", "text": "This is *another* comment"}
+    {
+        "author": "James Kao",
+        "text": "Data Hacker"
+    },
+    {
+        "author": "Peter Thiel",
+        "text": "Zero to *One*"
+    },
+    {
+        "author": "Reid Hoffman",
+        "text": "Startup of *You*"
+    }
 ]

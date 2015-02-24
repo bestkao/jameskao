@@ -5,8 +5,7 @@ var CommentBox = React.createClass({
     return {data: []}
   },
   componentDidMount: function() {
-    $.ajax({
-      url: this.props.url,
+    $.ajax(this.props.url, {
       dataType: 'json',
       success: function(data) {
         this.setState({data: data})
@@ -20,7 +19,7 @@ var CommentBox = React.createClass({
     return (
       <div className='commentBox'>
         <h1>Comments</h1>
-        <CommentList data={this.state.data}/>
+        <CommentList data={this.state.data} />
         <CommentForm />
       </div>
     )
