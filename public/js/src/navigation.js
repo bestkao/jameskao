@@ -11,9 +11,9 @@ var NAV_LINKS = {
     link: '/#background',
     title: 'Background'
   },
-  'gallery': {
-    link: '/#gallery',
-    title: 'Gallery'
+  'projects': {
+    link: '/#projects',
+    title: 'Projects'
   },
   'contact': {
     link: '/#contact',
@@ -21,7 +21,7 @@ var NAV_LINKS = {
   },
   'testimonials': {
     link: '/#testimonials',
-    title: "What Others Say"
+    title: 'What Others Say'
   }
 }
 
