@@ -8,19 +8,37 @@
 body {
 	font-family: 'Proxima Nova Thin', sans-serif;
   padding-top: 50px;
+	color: rgba(0,0,0,0.9);
+	background-color: #fafbfc;
 }
 
 /* Navigation */
 .navbar {
+	font-family: 'Proxima Nova', sans-serif;
 	height: 64px;
-	background-color: #fff;
+	background-color: #fafbfc;
 }
 .navbar .container {
-	padding-top: 8px;
+	padding: 8px 0px 0px 0px;
 }
 .navbar .navbar-brand, .navbar .navbar-brand:hover {
 	font-family: 'Poiret One', cursive;
-	color: #000;
+	color: rgba(0,0,0,0.9);
+}
+.navbar-inverse .navbar-nav > .active > a {
+	color: rgba(0,0,0,0.9);
+	background-color: #fafbfc;
+}
+.navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+	color: #fafbfc;
+	background-color: rgba(0,0,0,0.9);
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: rgba(0,0,0,0.5);
+}
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+	color: #fafbfc;
+	background-color: rgba(0,0,0,0.9);
 }
 
 /* Body */
