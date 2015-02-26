@@ -1,0 +1,35 @@
+/* Fonts */
+@import url("ProximaNova.css");
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+/* Core */
+body {
+	font-family: 'Proxima Nova Thin', sans-serif;
+  padding-top: 50px;
+}
+
+/* Navigation */
+.navbar {
+	height: 64px;
+	background-color: #fff;
+}
+.navbar .container {
+	padding-top: 8px;
+}
+.navbar .navbar-brand, .navbar .navbar-brand:hover {
+	font-family: 'Poiret One', cursive;
+	color: #000;
+}
+
+/* Body */
+.body {
+	font-family: 'Arvo', serif;
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.lead {
+	font-family: 'Raleway', sans-serif;
+}
