@@ -7,9 +7,20 @@
 /* Core */
 body {
 	font-family: 'Proxima Nova Thin', sans-serif;
-  padding-top: 50px;
+  padding: 64px 10%;
 	color: rgba(0,0,0,0.9);
 	background-color: #fafbfc;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0.1em;
+	text-align: justify;
+}
+h1 {
+	font-family: 'Arvo', serif;
+	text-align: center;
+}
+h2 {
+	color: rgba(0,0,0,0.5);
 }
 
 /* Navigation */
@@ -21,6 +32,7 @@ body {
 }
 .navbar .container {
 	padding-top: 8px;
+	letter-spacing: 0em;
 }
 .navbar .navbar-brand, .navbar .navbar-brand:hover {
 	font-family: 'Poiret One', cursive;
@@ -90,8 +102,8 @@ body {
 /* Body */
 .banner {
 	font-family: 'Arvo', serif;
-  padding: 40px 15px;
   text-align: center;
+	margin: 0 auto;
 	background-image: url(../img/background.jpg);
 	background-size: auto 100%;
 	background-repeat: no-repeat;
@@ -100,4 +112,8 @@ body {
 
 .lead {
 	font-family: 'Raleway', sans-serif;
+}
+
+.comment {
+	padding: 0px 10%;
 }
