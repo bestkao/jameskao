@@ -88,10 +88,14 @@ body {
 }
 
 /* Body */
-.body {
+.banner {
 	font-family: 'Arvo', serif;
   padding: 40px 15px;
   text-align: center;
+	background-image: url(../img/background.jpg);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .lead {
