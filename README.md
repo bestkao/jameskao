@@ -1,6 +1,6 @@
 # [James Kao] (http://jameskao.co)
 
-Personal Site of James Kao - Data Hacker and Full Stack Dev
+Personal Site of James Kao | Full Stack Engineer
 
 Revamp of his old site <http://thekao.com>
 

@@ -1,7 +1,7 @@
 {
   "name": "jameskao",
   "version": "1.0.0",
-  "description": "James Kao | Data Hacker",
+  "description": "James Kao | Full Stack Engineer",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"

@@ -4,10 +4,102 @@ block head
   include header
 
 block content
-  .banner
-    img(src='img/logo.png')
-    // p.lead Data Hacker | Full Stack Dev
-  #content
-  script(type='text/jsx' src='js/src/tutorial20.js')
-  #filterable-product-table
-  script(type='text/jsx' src='js/src/filterableProductTable.js')
+  .content.pure-u-1.pure-u-md-3-4
+    div
+      // A wrapper for all the blog posts
+      .posts
+        h1.content-subhead Pinned Post
+        // A single blog post
+        section.post
+          header.post-header
+            img.post-avatar(alt="James Kao's avatar", height='48', width='48', src='img/james-avatar.jpg')
+            h2.post-title Introducing James Kao
+            p.post-meta
+              | By Anonymous under 
+              a.post-category.post-category-pure(href='#') Product
+          .post-description
+            p
+              | Yesterday at HackathonHackers, we launched James Kao &ndash; a more <em>human</em> development tool. Phew! Here are the 
+              a(href='#') slides from the presentation
+              | .
+            p Although it looks pretty minimalist, we&rsquo;ve been refining on James for several months. After many iterations, we have created James to lead teams, champion new projects, and seamlessly introduce new technologies.
+            p Not everything can tell what your clients are going to want before they say so. James can, helping you design your software for the inevitable.
+      .posts
+        h1.content-subhead Recent Posts
+        section.post
+          header.post-header
+            img.post-avatar(alt="James Kao", height='48', width='48', src='img/james-avatar.jpg')
+            h2.post-title Troublemaker and Hacker Extrodinaire
+            p.post-meta
+              | By 
+              a.post-author(href='#') James Kao
+              |  under 
+              a.post-category.post-category-design(href='#') Marketing
+          .post-description
+            p Shaking up online payments with Bitcoin API integrations at Snapcard.
+            p Disrupting the education scene with the biggest education hackathon at HackingEDU.
+            p
+              | I welcome any bounties to hack on your idea, from concept to production. 
+              a(href='mailto: james@thekao.com') Let's Connect
+        section.post
+          header.post-header
+            img.post-avatar(alt="Some developer dude's avatar", height='48', width='48', src='img/james-avatar.jpg')
+            h2.post-title Everything You Need to Know About ReactJS and Flux
+            p.post-meta
+              | By 
+              a.post-author(href='#') Some developer dude
+              |  under 
+              a.post-category.post-category-js(href='#') JavaScript
+          .post-description
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        section.post
+          header.post-header
+            img.post-avatar(alt="Some photographer's avatar", height='48', width='48', src='img/james-avatar.jpg')
+            h2.post-title Photos from Snapcard and HackingEDU
+            p.post-meta
+              | By 
+              a.post-author(href='#') Some photographer
+              |  under 
+              a.post-category(href='#') Uncategorized
+          .post-description
+            .post-images.pure-g
+              .pure-u-1.pure-u-md-1-2
+                a(href='http://www.flickr.com/photos/uberlife/8915936174/')
+                  img.pure-img-responsive(alt='Photo of someone working poolside at a resort', src='http://farm8.staticflickr.com/7448/8915936174_8d54ec76c6.jpg')
+                .post-image-meta
+                  h3 Snapcard
+              .pure-u-1.pure-u-md-1-2
+                a(href='http://www.flickr.com/photos/uberlife/8907351301/')
+                  img.pure-img-responsive(alt='Photo of the sunset on the beach', src='http://farm8.staticflickr.com/7382/8907351301_bd7460cffb.jpg')
+                .post-image-meta
+                  h3 HackingEDU
+        section.post
+          header.post-header
+            img.post-avatar(alt="Andrew Wooldridge's avatar", height='48', width='48', src='img/james-avatar.jpg')
+            h2.post-title James Kao v1.0.0 RC Released
+            p.post-meta
+              | By 
+              a.post-author(href='#') James Kao
+              |  under 
+              a.post-category.post-category-yui(href='#') Updates
+          .post-description
+            p We are happy to announce the release of James Kao 1.0.0 RC! You can find it now on the bestkao github repository, download it directly, or pull it in via <code>git clone</code>. We&rsquo;ve also updated the readme with the latest documentation.
+      .footer
+        .pure-menu.pure-menu-horizontal
+          ul
+            li.pure-menu-item
+              a.pure-menu-link(href='https://fb.com/thebestkao') Facebook
+            li.pure-menu-item
+              a.pure-menu-link(href='http://twitter.com/thebestkao') Twitter
+            li.pure-menu-item
+              a.pure-menu-link(href='http://github.com/bestkao') GitHub
+            li.pure-menu-item
+              a.pure-menu-link(href='http://linkedin.com/in/jameskao1') LinkedIn
+  //- .banner
+  //-   img(src='img/logo.png')
+  //-   // p.lead Full Stack Engineer
+  //- #content
+  //- script(type='text/jsx' src='js/src/tutorial20.js')
+  //- #filterable-product-table
+  //- script(type='text/jsx' src='js/src/filterableProductTable.js')
