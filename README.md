@@ -1,7 +1,7 @@
-# [James Kao] (http://jameskao.co)
+# [James Kao] (http://jameskao.me)
 
 Personal Site of James Kao | Full Stack Engineer
 
 Revamp of his old site <http://thekao.com>
 
-To get started, check out <http://jameskao.co>
+To get started, check out <http://jameskao.me>

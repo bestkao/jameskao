@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/bestkao/jameskao/issues"
   },
-  "homepage": "https://jameskao.co",
+  "homepage": "https://jameskao.me",
   "dependencies": {
     "body-parser": "^1.12.0",
     "cookie-parser": "^1.3.4",
